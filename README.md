@@ -15,10 +15,11 @@ To acheive this objective we will create a database schema and ETL pipeline to h
 **ETL Process:** This section describes the processing of the logs and creating different tables so that analytical queries can be run on them. It also describes, which directories has what kind of data and how are you extracting and transforming it.
 
 
+
 **Project Repository files:** {{This section describes what files are for which purpose in the project}}
 
 
-**How To Run the Project:** This describes the steps to run the project
+**How To Run the Project:** {{This describes the steps to run the project}}
 
 
 
