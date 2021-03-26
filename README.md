@@ -1,8 +1,8 @@
 # UND-PostGres-DM
-                                                  Udacity Nano Degree Postgres Datamodelling Project
+                                                 ** Udacity Nano Degree Postgres Datamodelling Project**
 
 
-**Project description:** {{This is well written, and gives a gist of what to be expected.}}
+**Project description:** 
 
 A startup called **Sparkify** wants to analyze the data they've been collecting on songs and user activity from their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 To acheive this objective we will create a database schema and ETL pipeline that populates the schema with the data to help with  this analysis. 
@@ -10,6 +10,7 @@ To acheive this objective we will create a database schema and ETL pipeline that
 **Database design:**  {{Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.}}
 
 
+![ER-Diagram](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/33760/1616254201/Song_ERD.png)
 
 **ETL Process:** This section describes the processing of the logs and creating different tables so that analytical queries can be run on them. It also describes, which directories has what kind of data and how are you extracting and transforming it.
 
