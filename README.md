@@ -7,7 +7,7 @@
 A startup called **Sparkify** wants to analyze the data they've been collecting on songs and user activity from their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 To acheive this objective we will create a database schema and ETL pipeline that populates the schema with the data to help with  this analysis. 
 
-**Database design:**  {{Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.}}
+**Database design:**  
 
 The database schema consists of the following **Fact Table**
 
