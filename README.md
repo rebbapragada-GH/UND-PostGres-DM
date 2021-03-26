@@ -9,6 +9,39 @@ To acheive this objective we will create a database schema and ETL pipeline that
 
 **Database design:**  {{Describe the schema, you should lay down what are the tables (fact and dimension tables) clearly. Mention, the purpose for each of them.}}
 
+The database schema consists of the following **Fact Table**
+
+   **SONGPLAYS** - stores records in log data associated with song plays i.e. records with page NextSong having the following column definitions
+  
+               songplay_id serial PRIMARY KEY
+               start_time timestamp NOT NULL REFERENCES time(start_time)
+               user_id text NOT NULL REFERENCES users(user_id)
+               level varchar
+               song_id text REFERENCES songs(song_id)
+               artist_id text REFERENCES artists(artist_id)
+               session_id text
+               location varchar
+               user_agent varchar
+
+The database schema consists of the following **Dimension Tables**
+
+**USERS** - stores users in the app that can access the songs and having the following column definitions
+  
+               user_id text PRIMARY KEY
+               first_name varchar
+               last_name varchar
+               gender varchar
+               level varchar 
+
+**SONGS**  -stores  songs in music database and having the following column definitions
+
+
+
+artists - artists in music database
+artist_id, name, location, latitude, longitude
+
+time - timestamps of records in songplays broken down into specific units
+start_time, hour, day, week, month, year, weekday
 
 ![ER-Diagram](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/33760/1616254201/Song_ERD.png)
 
